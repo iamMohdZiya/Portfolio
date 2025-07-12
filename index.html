@@ -286,8 +286,7 @@
           </div>
           <div class="flex-1">
             <form
-              action="https://formspree.io/f/xyzjakke"
-              method="POST"
+              id="contact-form"
               class="space-y-4"
             >
               <label class="block text-gray-200 text-base mb-2">
@@ -298,8 +297,8 @@
                 Your message:
                 <textarea name="message" required rows="5" class="w-full p-4 rounded-lg bg-slate-900 text-gray-200 border border-teal-500/30 focus:outline-none focus:border-teal-500 text-base mt-2"></textarea>
               </label>
-              <!-- your other form fields go here -->
               <button type="submit" class="bg-teal-500 text-white px-8 py-4 rounded-full font-semibold text-base hover:bg-teal-600 transition w-full sm:w-auto shadow-xl">Send</button>
+              <div id="form-status" class="text-green-400 text-base mt-4 hidden">Thank you! Your message has been sent.</div>
             </form>
           </div>
         </div>
@@ -323,6 +322,38 @@
   </button>
 
   <script>
+    // Contact form AJAX submit
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('contact-form');
+      if(form) {
+        form.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          const formData = new FormData(form);
+          const status = document.getElementById('form-status');
+          try {
+            const res = await fetch('https://formspree.io/f/xyzjakke', {
+              method: 'POST',
+              headers: { 'Accept': 'application/json' },
+              body: formData
+            });
+            if (res.ok) {
+              status.classList.remove('hidden');
+              form.reset();
+            } else {
+              status.textContent = 'Oops! Something went wrong.';
+              status.classList.remove('hidden');
+              status.classList.remove('text-green-400');
+              status.classList.add('text-red-400');
+            }
+          } catch {
+            status.textContent = 'Oops! Something went wrong.';
+            status.classList.remove('hidden');
+            status.classList.remove('text-green-400');
+            status.classList.add('text-red-400');
+          }
+        });
+      }
+    });
     // Typed.js for typewriter effect
     const typed = new Typed('#typed', {
       strings: ['Full Stack Developer', 'MERN Stack Expert', 'AI Enthusiast', 'Problem Solver'],

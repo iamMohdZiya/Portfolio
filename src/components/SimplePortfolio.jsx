@@ -89,6 +89,7 @@ const SimplePortfolio = () => {
       category: 'fullstack',
       role: 'Full Stack Developer',
       github: 'https://github.com/iamMohdZiya/Student_Hub_mern',
+      demo: 'https://student-hub-mern.onrender.com/',
       tech: ['React', 'Node.js','Express', 'MongoDB', 'Tailwind CSS']
     },
     {

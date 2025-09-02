@@ -172,7 +172,7 @@ const SimplePortfolio = () => {
     },
     {
       id: 4,
-      title: 'Personality & Soft Skills Certificate',
+      title: 'Personality & Soft Skills Certificated',
       description: 'Certified in advanced communication and interpersonal skills for professional excellence.',
       icon: Trophy,
       color: 'from-purple-400 to-pink-500',

@@ -479,7 +479,7 @@ const SimplePortfolio = () => {
                   className="btn-outline px-8 py-4 rounded-full text-lg font-semibold"
                   asChild
                 >
-                  <a href="./Mohd_Ziya_Resume.pdf" download>
+                  <a href="./MohdZiyaResume.pdf" download>
                     Download Resume
                   </a>
                 </Button>

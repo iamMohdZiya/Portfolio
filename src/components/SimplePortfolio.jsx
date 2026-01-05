@@ -41,6 +41,28 @@ const SimplePortfolio = () => {
   const projects = [
     {
       id: 1,
+      title: 'Presenzo — Smart Attendance Management System',
+      description: 'Geolocation-based attendance system with React Native apps, GPS geofencing, and admin/faculty/student dashboards.',
+      image: '/images/Presenzo.png',
+      category: 'fullstack',
+      role: 'Full Stack Developer',
+      github: 'https://github.com/iamMohdZiya/adminDashboardAttendanceApp',
+      demo: 'https://admin-dashboard-attendance-app.vercel.app/',
+      tech: ['React Native', 'React', 'Node.js', 'Express', 'MongoDB', 'JWT']
+    },
+    {
+      id: 2,
+      title: 'LearnHub — Internship Learning Management System',
+      description: 'Production-grade LMS with strict RBAC (Admin, Mentor, Student), sequential course progression, real-time progress tracking, and PDF certification.',
+      image: '/images/Learnhub.png',
+      category: 'fullstack',
+      role: 'Full Stack Developer',
+      github: 'https://github.com/iamMohdZiya/PrasunetTDD_LMS_FullStack',
+      demo: 'https://prasunet-tdd-frontend-di9e.vercel.app/',
+      tech: ['React', 'Node.js', 'Express', 'PostgreSQL (Supabase)', 'JWT', 'Jest']
+    },
+    {
+      id: 3,
       title: 'AmWell – Virtual Healthcare Assistant',
       description: 'Real-time healthcare support system with location tracking and WhatsApp-style chat.',
       image: amwellProject,
@@ -51,7 +73,7 @@ const SimplePortfolio = () => {
       tech: ['Node.js', 'Socket.IO', 'MongoDB', 'Express', 'Real-time Chat']
     },
     {
-      id: 2,
+      id: 4,
       title: 'LULU Academy - E-learning Platform',
       description: 'A video streaming platform with admin dashboard for uploading courses and learning materials.',
       image: luluProject,
@@ -62,7 +84,7 @@ const SimplePortfolio = () => {
       tech: ['React', 'Node.js', 'MongoDB', 'Video Streaming', 'Admin Dashboard']
     },
     {
-      id: 3,
+      id: 5,
       title: 'Microservices Architecture',
       description: 'A project showcasing microservices architecture using Node.js and Docker.',
       image: '/images/micro.png',
@@ -72,7 +94,7 @@ const SimplePortfolio = () => {
       tech: ['Node','Express','Docker','Nginx','Redis','Kafka']
     },
     {
-      id: 4,
+      id: 6,
       title: 'Student Result Analysis System',
       description: 'Multi-role result management system with branch/year mapping and authentication.',
       image: '/images/a.png',
@@ -82,7 +104,7 @@ const SimplePortfolio = () => {
       tech: ['Node.js', 'Express', 'MongoDB', 'Authentication', 'Multi-role System']
     },
     {
-      id: 5,
+      id: 7,
       title: 'Student Hub',
       description: 'A platform for students to collaborate, share resources, and enhance their learning experience.',
       image: '/images/studenthub.png',
@@ -93,7 +115,7 @@ const SimplePortfolio = () => {
       tech: ['React', 'Node.js','Express', 'MongoDB', 'Tailwind CSS']
     },
     {
-      id: 6,
+      id: 8,
       title: 'Modern Blogging Platform',
       description: 'Feature-rich blogging application with user authentication, post management, and dynamic content.',
       image: blogProject,
@@ -103,7 +125,7 @@ const SimplePortfolio = () => {
       tech: ['React', 'Node.js', 'MongoDB', 'Rich Text Editor', 'Authentication']
     },
     {
-      id: 6,
+      id: 9,
       title: 'Interactive Tic Tac Toe',
       description: 'Modern web-based Tic Tac Toe game with sleek UI and interactive gameplay experience.',
       image: ticTacToeProject,
@@ -114,7 +136,7 @@ const SimplePortfolio = () => {
       tech: ['HTML', 'CSS', 'JavaScript', 'Game Logic']
     },
     {
-      id: 7,
+      id: 10,
       title: 'Interactive Memory Game',
       description: 'A exercise for memory sharpening and cognitive skills.',
       image: '/images/score.png',
@@ -130,14 +152,17 @@ const SimplePortfolio = () => {
     { name: 'Java', icon: 'https://cdn-icons-png.flaticon.com/512/226/226777.png', level: 85 },
     { name: 'Python', icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968350.png', level: 88 },
     { name: 'JavaScript', icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', level: 95 },
+    { name:'TypeScript', icon:'https://cdn-icons-png.flaticon.com/512/5968/5968381.png', level: 90 },
     { name: 'React', icon: 'https://cdn-icons-png.flaticon.com/512/919/919851.png', level: 90 },
+    { name:'Supabase', icon:'https://yt3.googleusercontent.com/KVjptxDSWT7rjVfGax2TgTNVAYgplgo1z_fwaV3MFjPpcmNVZC0TIgQV030BPJ0ybCP3_Fz-2w=s900-c-k-c0x00ffffff-no-rj', level: 80 },
+    { name:'PostgreSQL', icon:'https://cdn-icons-png.flaticon.com/512/5968/5968342.png', level: 80 },
     { name: 'Node.js', icon: 'https://cdn-icons-png.flaticon.com/512/919/919825.png', level: 92 },
     { name: 'MongoDB', icon: 'https://images.icon-icons.com/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png', level: 85 },
     { name: 'MySQL', icon: 'https://cdn-icons-png.flaticon.com/512/528/528260.png', level: 80 },
-    { name: 'Nginx', icon: 'https://www.sectigo.com/uploads/images/_950xAUTO_fit_center-center_none/nginx-large.png', level: 90 },
+    { name: 'Nginx', icon: 'https://icon2.cleanpng.com/20180811/rfs/kisspng-logo-font-brand-desktop-wallpaper-line-nginx-amp-quot-cooperative-technologists-5b6e6106553987.9131585215339604543491.jpg', level: 90 },
     { name: 'Redis', icon:'https://www.stackery.io/assets/images/posts/redis-cache-cluster-support/featured.svg', level: 85 },
-    { name: 'Socket.IO', icon: 'https://socket.io/images/logo.svg', level: 88 },
-    { name:'Kafka', icon:'https://cdn.freebiesupply.com/logos/thumbs/2x/kafka-logo.png', level: 90 },
+    { name: 'Socket.IO', icon: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg', level: 88 },
+    { name:'Kafka', icon:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqOKEVxLEPXLVAhlOcrfBnIOTzoCU23BwUMA&s', level: 90 },
     { name: 'Docker', icon: 'https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png', level: 75 },
     { name: 'HTML5', icon: 'https://cdn-icons-png.flaticon.com/512/732/732212.png', level: 98 },
     { name: 'CSS3', icon: 'https://cdn-icons-png.flaticon.com/512/732/732190.png', level: 95 },
@@ -479,7 +504,7 @@ const SimplePortfolio = () => {
                   className="btn-outline px-8 py-4 rounded-full text-lg font-semibold"
                   asChild
                 >
-                  <a href="./ZiyaMohd_Resume.pdf" download>
+                  <a href="./ZiyaResume.pdf" download>
                     Download Resume
                   </a>
                 </Button>

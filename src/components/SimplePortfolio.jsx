@@ -297,7 +297,7 @@ const SimplePortfolio = () => {
               className="text-2xl sm:text-3xl font-bold text-primary text-glow cursor-pointer"
               onClick={() => scrollToSection('#home')}
             >
-              Mohd Ziya
+              Ziya Mohd.
             </motion.div>
 
             <div className="hidden md:flex items-center space-x-8">
@@ -441,7 +441,7 @@ const SimplePortfolio = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                Mohd Ziya
+                Ziya Mohd.
                 <motion.div
                   className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent rounded-full"
                   initial={{ scaleX: 0 }}
@@ -721,7 +721,7 @@ const SimplePortfolio = () => {
                 >
                   <img
                     src={heroPortrait}
-                    alt="Mohd Ziya - Full Stack Developer"
+                    alt="Ziya Mohd. - Full Stack Developer"
                     className="w-full h-full object-cover object-center"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent" />
@@ -746,7 +746,7 @@ const SimplePortfolio = () => {
                     className="absolute -bottom-4 -left-4 glass-card p-3 rounded-full"
                   >
                     <div className="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-lg">15+</span>
+                      <span className="text-white font-bold text-lg">16+</span>
                     </div>
                     <p className="text-xs text-muted-foreground mt-1 text-center">Skills</p>
                   </motion.div>
@@ -771,7 +771,7 @@ const SimplePortfolio = () => {
                   transition={{ delay: 0.4, duration: 0.6 }}
                   className="glass-card p-6 rounded-2xl text-center"
                 >
-                  <div className="text-3xl font-bold text-accent mb-2">15+</div>
+                  <div className="text-3xl font-bold text-accent mb-2">16+</div>
                   <div className="text-sm text-muted-foreground">Technologies</div>
                 </motion.div>
               </div>
@@ -1467,7 +1467,7 @@ const SimplePortfolio = () => {
                       </motion.div>
                       <div>
                         <div className="font-medium text-foreground group-hover:text-primary transition-colors">LinkedIn</div>
-                        <div className="text-muted-foreground">linkedin.com/in/mohdziya</div>
+                        <div className="text-muted-foreground">linkedin.com/in/ziyamohd</div>
                       </div>
                     </motion.div>
                   </div>
@@ -1652,7 +1652,7 @@ const SimplePortfolio = () => {
             </div>
 
             <div className="text-muted-foreground">
-              <p>&copy; {new Date().getFullYear()} Mohd Ziya. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Ziya Mohd. All rights reserved.</p>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import Typewriter from 'typewriter-effect';
 
-const heroPortrait = '/images/my5.png';
+const heroPortrait = '/images/ZiyaImageProfile.png';
 const amwellProject = '/images/amwell.png';
 const luluProject = '/images/lulu.png';
 const blogProject = '/images/bloging.png';
